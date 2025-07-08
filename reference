@@ -1,6 +1,10 @@
-Core Implementation Workflow
-1. Project Setup Commands
-bash# Create Next.js project with TypeScript
+# Templify - Technical Implementation Guide for Cursor AI
+
+## Core Implementation Workflow
+
+### 1. Project Setup Commands
+```bash
+# Create Next.js project with TypeScript
 npx create-next-app@latest templify --typescript --tailwind --app
 
 # Navigate to project
@@ -14,15 +18,21 @@ npm install lucide-react @radix-ui/react-dialog @radix-ui/react-progress
 
 # Install development dependencies
 npm install -D @types/multer @types/node
-2. Environment Variables Setup
-env# .env.local
+```
+
+### 2. Environment Variables Setup
+```env
+# .env.local
 GOOGLE_VISION_API_KEY=your_google_vision_key
 CANVA_CLIENT_ID=your_canva_client_id
 CANVA_CLIENT_SECRET=your_canva_client_secret
 HUGGINGFACE_API_KEY=your_huggingface_key
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
-3. Tailwind Configuration
-javascript// tailwind.config.js
+```
+
+### 3. Tailwind Configuration
+```javascript
+// tailwind.config.js
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -43,8 +53,11 @@ module.exports = {
   },
   plugins: [],
 }
-4. Core TypeScript Types
-typescript// types/index.ts
+```
+
+### 4. Core TypeScript Types
+```typescript
+// types/index.ts
 export interface AnalysisResult {
   id: string;
   image: {
@@ -88,8 +101,11 @@ export interface CanvaTemplate {
   background: string;
   dimensions: { width: number; height: number };
 }
-5. Image Upload API Implementation
-typescript// pages/api/upload.ts
+```
+
+### 5. Image Upload API Implementation
+```typescript
+// pages/api/upload.ts
 import { NextApiRequest, NextApiResponse } from 'next';
 import multer from 'multer';
 import sharp from 'sharp';
@@ -125,8 +141,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(500).json({ error: 'Image processing failed' });
   }
 }
-6. Analysis Processing Logic
-typescript// lib/imageAnalysis.ts
+```
+
+### 6. Analysis Processing Logic
+```typescript
+// lib/imageAnalysis.ts
 import Tesseract from 'tesseract.js';
 import ColorThief from 'colorthief';
 import { AnalysisResult } from '../types';
@@ -161,8 +180,11 @@ async function extractColors(imageBuffer: Buffer) {
   const palette = await colorThief.getPalette(imageBuffer, 8);
   return processColorResults(palette);
 }
-7. Frontend Component Structure
-typescript// components/ImageUpload.tsx
+```
+
+### 7. Frontend Component Structure
+```typescript
+// components/ImageUpload.tsx
 'use client';
 import { useState, useCallback } from 'react';
 import { Upload, Image as ImageIcon } from 'lucide-react';
@@ -202,8 +224,11 @@ export default function ImageUpload({ onUpload }: { onUpload: (file: File) => vo
     </div>
   );
 }
-8. Canva Integration
-typescript// lib/templateBuilder.ts
+```
+
+### 8. Canva Integration
+```typescript
+// lib/templateBuilder.ts
 import { AnalysisResult, CanvaTemplate } from '../types';
 
 export async function createCanvaTemplate(analysis: AnalysisResult): Promise<string> {
@@ -243,8 +268,11 @@ function mapToCanvaFont(detectedFont: string): string {
   
   return fontMapping[detectedFont] || 'Arial';
 }
-9. Main Page Implementation
-typescript// app/page.tsx
+```
+
+### 9. Main Page Implementation
+```typescript
+// app/page.tsx
 'use client';
 import { useState } from 'react';
 import ImageUpload from '../components/ImageUpload';
@@ -297,47 +325,56 @@ export default function Home() {
     </div>
   );
 }
-Cursor AI Prompts for Development
-Initial Setup Prompt
+```
+
+## Cursor AI Prompts for Development
+
+### Initial Setup Prompt
+```
 Create a Next.js 14 project called "templify" with TypeScript and Tailwind CSS. Set up the basic project structure with components for image upload, analysis results, and Canva integration. Include proper TypeScript types for image analysis results.
-Component Development Prompts
+```
+
+### Component Development Prompts
+```
 1. "Create a drag-and-drop image upload component with Tailwind styling"
 2. "Build an analysis report component that displays text, colors, and fonts"
 3. "Create a color palette component that shows extracted colors with hex codes"
 4. "Build a font analysis component that lists detected fonts and their properties"
 5. "Create a Canva export button that opens templates in a new tab"
-API Development Prompts
+```
+
+### API Development Prompts
+```
 1. "Create an API endpoint for image upload with Sharp processing"
 2. "Build an analysis API that uses Tesseract.js for OCR"
 3. "Create a color extraction API using Color Thief"
 4. "Build a Canva integration API for template creation"
-Development Workflow
-Phase 1: Basic Setup
+```
 
-Create Next.js project with TypeScript
-Set up Tailwind CSS configuration
-Create basic component structure
-Implement image upload functionality
+## Development Workflow
 
-Phase 2: Analysis Features
+### Phase 1: Basic Setup
+1. Create Next.js project with TypeScript
+2. Set up Tailwind CSS configuration
+3. Create basic component structure
+4. Implement image upload functionality
 
-Integrate OCR with Tesseract.js
-Add color extraction with Color Thief
-Implement font detection logic
-Create analysis results display
+### Phase 2: Analysis Features
+1. Integrate OCR with Tesseract.js
+2. Add color extraction with Color Thief
+3. Implement font detection logic
+4. Create analysis results display
 
-Phase 3: Canva Integration
+### Phase 3: Canva Integration
+1. Set up Canva Connect API
+2. Build template generation logic
+3. Create export functionality
+4. Test end-to-end workflow
 
-Set up Canva Connect API
-Build template generation logic
-Create export functionality
-Test end-to-end workflow
-
-Phase 4: Polish & Deploy
-
-Add loading states and error handling
-Optimize performance and user experience
-Deploy to Vercel
-Test production environment
+### Phase 4: Polish & Deploy
+1. Add loading states and error handling
+2. Optimize performance and user experience
+3. Deploy to Vercel
+4. Test production environment
 
 This guide provides everything Cursor AI needs to build Templify with the exact tech stack and implementation details.
