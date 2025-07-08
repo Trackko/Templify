@@ -179,45 +179,6 @@
   },
   {
     "id": 18,
-    "title": "Error handling and validation",
-    "description": "Show clear error messages, validate inputs and uploads.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 18.1, "title": "Show clear error messages for all failure cases", "status": "pending"},
-      {"id": 18.2, "title": "Validate user inputs and file uploads", "status": "pending"}
-    ]
-  },
-  {
-    "id": 19,
-    "title": "Performance optimization",
-    "description": "Optimize image processing and page load times, compress images, minimize bundle size.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 19.1, "title": "Optimize image processing and page load times", "status": "pending"},
-      {"id": 19.2, "title": "Compress images and minimize bundle size", "status": "pending"}
-    ]
-  },
-  {
-    "id": 20,
-    "title": "Cross-browser testing",
-    "description": "Test and fix issues on Chrome, Firefox, Safari, Edge.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 20.1, "title": "Test and fix issues on Chrome, Firefox, Safari, Edge", "status": "pending"}
-    ]
-  },
-  {
-    "id": 21,
-    "title": "Vercel deployment setup",
-    "description": "Configure Vercel for Next.js deployment, set up environment variables.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 21.1, "title": "Configure Vercel for Next.js deployment", "status": "pending"},
-      {"id": 21.2, "title": "Set up environment variables", "status": "pending"}
-    ]
-  },
-  {
-    "id": 22,
     "title": "Environment variable configuration",
     "description": "Store API keys and secrets securely, document required environment variables.",
     "status": "pending",
@@ -226,34 +187,5 @@
       {"id": 22.2, "title": "Document required environment variables", "status": "pending"}
     ]
   },
-  {
-    "id": 23,
-    "title": "End-to-end testing",
-    "description": "Write E2E tests for main user flows, test upload, analysis, export, and error cases.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 23.1, "title": "Write E2E tests for main user flows", "status": "pending"},
-      {"id": 23.2, "title": "Test upload, analysis, export, and error cases", "status": "pending"}
-    ]
-  },
-  {
-    "id": 24,
-    "title": "Performance monitoring",
-    "description": "Set up monitoring tools, track processing times and errors.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 24.1, "title": "Set up monitoring tools (e.g., Vercel Analytics)", "status": "pending"},
-      {"id": 24.2, "title": "Track processing times and errors", "status": "pending"}
-    ]
-  },
-  {
-    "id": 25,
-    "title": "Bug fixes and optimizations",
-    "description": "Address issues found during testing, final code cleanup and documentation.",
-    "status": "pending",
-    "subtasks": [
-      {"id": 25.1, "title": "Address issues found during testing", "status": "pending"},
-      {"id": 25.2, "title": "Final code cleanup and documentation", "status": "pending"}
-    ]
-  }
+  
 ] 
