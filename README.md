@@ -84,35 +84,88 @@ Templify is a web application that allows users to upload any poster, design, or
   - Generate style guide PDF
   - Copy CSS code to clipboard
 
+## Project Stack & Technologies
+### Frontend Framework
+
+- Next.js 14 (App Router)
+- React 18 with TypeScript
+- Tailwind CSS for styling
+- Lucide React for icons
+
+### File Upload & Processing
+
+- Next.js API Routes for backend
+- Multer for file upload handling
+- Sharp for image processing/optimization
+- HTML5 Canvas API for client-side image manipulation
+
+### AI/ML Libraries
+
+- Tesseract.js - OCR for text extraction
+- Color Thief - Color palette extraction
+- Vibrant.js - Advanced color analysis
+- OpenCV.js - Computer vision for layout detection
+
+### External APIs (Free Tier)
+
+- Google Vision API - Advanced OCR (1000 requests/month free)
+- Canva Connect API - Template creation (100 requests/day free)
+- Google Fonts API - Font library access
+- Hugging Face Inference API - Computer vision models
+
 ## Technical Architecture
 
 ### Frontend (Next.js)
 ```
-pages/
-├── index.js                    # Main upload page
-├── analysis/[id].js           # Analysis results page
-└── api/
-    ├── analyze.js             # Image analysis endpoint
-    ├── generate-template.js   # Template generation
-    └── export-canva.js        # Canva integration
-
-components/
-├── ImageUpload.js             # Drag & drop upload
-├── AnalysisReport.js          # Detailed analysis display
-├── ColorPalette.js            # Color extraction display
-├── FontAnalysis.js            # Typography breakdown
-├── LayoutVisualization.js     # Layout structure display
-├── CanvaExport.js             # Export to Canva button
-└── TemplatePreview.js         # Preview generated template
-
-lib/
-├── imageAnalysis.js           # Core analysis functions
-├── fontDetection.js           # Font recognition
-├── colorExtraction.js         # Color palette generation
-├── layoutAnalysis.js          # Layout detection
-├── templateBuilder.js         # Template creation
-└── canvaIntegration.js        # Canva API integration
+templify/
+├── app/
+│   ├── page.tsx                    # Main upload page
+│   ├── analysis/[id]/page.tsx      # Analysis results page
+│   ├── globals.css                 # Global Tailwind styles
+│   └── layout.tsx                  # Root layout
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx              # Reusable button component
+│   │   ├── card.tsx                # Card component
+│   │   └── progress.tsx            # Progress indicator
+│   ├── ImageUpload.tsx             # Drag & drop upload
+│   ├── AnalysisReport.tsx          # Analysis results display
+│   ├── ColorPalette.tsx            # Color extraction display
+│   ├── FontAnalysis.tsx            # Typography breakdown
+│   ├── LayoutVisualization.tsx     # Layout structure display
+│   └── CanvaExport.tsx             # Export to Canva button
+├── lib/
+│   ├── imageAnalysis.ts            # Core analysis functions
+│   ├── fontDetection.ts            # Font recognition logic
+│   ├── colorExtraction.ts          # Color palette generation
+│   ├── layoutAnalysis.ts           # Layout detection algorithms
+│   ├── templateBuilder.ts          # Canva template creation
+│   └── utils.ts                    # Helper functions
+├── pages/api/
+│   ├── upload.ts                   # Image upload endpoint
+│   ├── analyze.ts                  # Analysis processing
+│   └── export-canva.ts             # Canva integration
+├── types/
+│   └── index.ts                    # TypeScript type definitions
+└── public/
+    └── examples/                   # Sample images for demo
 ```
+
+## Cursor AI Prompts for Development
+### Initial Setup Prompt
+Create a Next.js 14 project called "templify" with TypeScript and Tailwind CSS. Set up the basic project structure with components for image upload, analysis results, and Canva integration. Include proper TypeScript types for image analysis results.
+### Component Development Prompts
+1. "Create a drag-and-drop image upload component with Tailwind styling"
+2. "Build an analysis report component that displays text, colors, and fonts"
+3. "Create a color palette component that shows extracted colors with hex codes"
+4. "Build a font analysis component that lists detected fonts and their properties"
+5. "Create a Canva export button that opens templates in a new tab"
+### API Development Prompts
+1. "Create an API endpoint for image upload with Sharp processing"
+2. "Build an analysis API that uses Tesseract.js for OCR"
+3. "Create a color extraction API using Color Thief"
+4. "Build a Canva integration API for template creation"
+
 
 ### AI/ML Services Stack
 1. **Text & OCR**: Tesseract.js (free) + Google Vision API (1000 requests/month free)
