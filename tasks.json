@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "title": "Set up Next.js project structure",
+    "description": "Initialize Next.js app, set up pages/components folders, configure ESLint, Prettier, and Git.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 1.1, "title": "Initialize Next.js app", "status": "pending"},
+      {"id": 1.2, "title": "Set up pages and components folders", "status": "pending"},
+      {"id": 1.3, "title": "Configure ESLint, Prettier, and Git", "status": "pending"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Implement image upload system",
+    "description": "Create drag & drop upload UI, support multiple formats, add preview, enforce limits, error handling, mobile responsive.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 2.1, "title": "Create drag & drop upload UI", "status": "pending"},
+      {"id": 2.2, "title": "Support PNG, JPG, JPEG, PDF, WebP", "status": "pending"},
+      {"id": 2.3, "title": "Add image preview with zoom", "status": "pending"},
+      {"id": 2.4, "title": "Enforce file size and dimension limits", "status": "pending"},
+      {"id": 2.5, "title": "Add error handling for unsupported files", "status": "pending"},
+      {"id": 2.6, "title": "Make upload mobile responsive", "status": "pending"}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Basic OCR integration with Tesseract.js",
+    "description": "Integrate Tesseract.js for text extraction, display detected text, handle errors.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 3.1, "title": "Integrate Tesseract.js for text extraction", "status": "pending"},
+      {"id": 3.2, "title": "Display detected text elements", "status": "pending"},
+      {"id": 3.3, "title": "Handle OCR errors gracefully", "status": "pending"}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Color extraction with Color Thief.js",
+    "description": "Integrate Color Thief.js for palette extraction, display palette, ensure accuracy.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 4.1, "title": "Integrate Color Thief.js for palette extraction", "status": "pending"},
+      {"id": 4.2, "title": "Display color palette with hex codes", "status": "pending"},
+      {"id": 4.3, "title": "Ensure color accuracy", "status": "pending"}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Simple analysis results display",
+    "description": "Show original image and detected elements, display extracted text and color palette.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 5.1, "title": "Show original image and detected elements", "status": "pending"},
+      {"id": 5.2, "title": "Display extracted text and color palette", "status": "pending"}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Font recognition implementation",
+    "description": "Integrate WhatFont.js and Google Fonts API, display font info, handle errors.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 6.1, "title": "Integrate WhatFont.js and Google Fonts API", "status": "pending"},
+      {"id": 6.2, "title": "Display font families, sizes, weights", "status": "pending"},
+      {"id": 6.3, "title": "Handle font matching errors", "status": "pending"}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Layout detection algorithms",
+    "description": "Implement layout analysis using Canvas API, detect positions, visualize structure.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 7.1, "title": "Implement layout analysis using Canvas API", "status": "pending"},
+      {"id": 7.2, "title": "Detect element positions, spacing, alignment", "status": "pending"},
+      {"id": 7.3, "title": "Visualize layout structure", "status": "pending"}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Enhanced typography analysis",
+    "description": "Analyze text hierarchy, show character spacing and line height.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 8.1, "title": "Analyze text hierarchy (H1, H2, body)", "status": "pending"},
+      {"id": 8.2, "title": "Show character spacing, line height", "status": "pending"}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Comprehensive color palette generation",
+    "description": "Use Vibrant.js for advanced color extraction, show usage breakdown and suggestions.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 9.1, "title": "Use Vibrant.js for advanced color extraction", "status": "pending"},
+      {"id": 9.2, "title": "Show color usage breakdown and suggestions", "status": "pending"}
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Element positioning detection",
+    "description": "Detect and display shapes, icons, images, borders, backgrounds.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 10.1, "title": "Detect and display shapes, icons, images, borders, backgrounds", "status": "pending"}
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Canva Connect API integration",
+    "description": "Set up Canva API credentials, test with sample template creation.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 11.1, "title": "Set up Canva API credentials and connection", "status": "pending"},
+      {"id": 11.2, "title": "Test API with sample template creation", "status": "pending"}
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Template structure creation",
+    "description": "Convert analysis results to Canva-compatible format, map elements.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 12.1, "title": "Convert analysis results to Canva-compatible format", "status": "pending"},
+      {"id": 12.2, "title": "Map elements to Canva equivalents", "status": "pending"}
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Element mapping to Canva format",
+    "description": "Implement mapping logic for fonts, colors, layout, elements.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 13.1, "title": "Implement mapping logic for fonts, colors, layout, elements", "status": "pending"}
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Font substitution system",
+    "description": "Replace detected fonts with Canva library alternatives, ensure visual similarity.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 14.1, "title": "Replace detected fonts with Canva library alternatives", "status": "pending"},
+      {"id": 14.2, "title": "Ensure visual similarity", "status": "pending"}
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Export functionality",
+    "description": "Add one-click export to Canva, generate shareable link, add alternative exports.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 15.1, "title": "Add one-click export to Canva", "status": "pending"},
+      {"id": 15.2, "title": "Generate shareable Canva template link", "status": "pending"},
+      {"id": 15.3, "title": "Add alternative exports: HTML/CSS, JSON, PDF, CSS code", "status": "pending"}
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Responsive design implementation",
+    "description": "Ensure all pages/components are mobile-friendly, test on devices and browsers.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 16.1, "title": "Ensure all pages/components are mobile-friendly", "status": "pending"},
+      {"id": 16.2, "title": "Test on various devices and browsers", "status": "pending"}
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Loading states and animations",
+    "description": "Add progress indicators for uploads/analysis, animate transitions.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 17.1, "title": "Add progress indicators for uploads and analysis", "status": "pending"},
+      {"id": 17.2, "title": "Animate transitions between steps", "status": "pending"}
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Error handling and validation",
+    "description": "Show clear error messages, validate inputs and uploads.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 18.1, "title": "Show clear error messages for all failure cases", "status": "pending"},
+      {"id": 18.2, "title": "Validate user inputs and file uploads", "status": "pending"}
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Performance optimization",
+    "description": "Optimize image processing and page load times, compress images, minimize bundle size.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 19.1, "title": "Optimize image processing and page load times", "status": "pending"},
+      {"id": 19.2, "title": "Compress images and minimize bundle size", "status": "pending"}
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Cross-browser testing",
+    "description": "Test and fix issues on Chrome, Firefox, Safari, Edge.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 20.1, "title": "Test and fix issues on Chrome, Firefox, Safari, Edge", "status": "pending"}
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Vercel deployment setup",
+    "description": "Configure Vercel for Next.js deployment, set up environment variables.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 21.1, "title": "Configure Vercel for Next.js deployment", "status": "pending"},
+      {"id": 21.2, "title": "Set up environment variables", "status": "pending"}
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Environment variable configuration",
+    "description": "Store API keys and secrets securely, document required environment variables.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 22.1, "title": "Store API keys and secrets securely", "status": "pending"},
+      {"id": 22.2, "title": "Document required environment variables", "status": "pending"}
+    ]
+  },
+  {
+    "id": 23,
+    "title": "End-to-end testing",
+    "description": "Write E2E tests for main user flows, test upload, analysis, export, and error cases.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 23.1, "title": "Write E2E tests for main user flows", "status": "pending"},
+      {"id": 23.2, "title": "Test upload, analysis, export, and error cases", "status": "pending"}
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Performance monitoring",
+    "description": "Set up monitoring tools, track processing times and errors.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 24.1, "title": "Set up monitoring tools (e.g., Vercel Analytics)", "status": "pending"},
+      {"id": 24.2, "title": "Track processing times and errors", "status": "pending"}
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Bug fixes and optimizations",
+    "description": "Address issues found during testing, final code cleanup and documentation.",
+    "status": "pending",
+    "subtasks": [
+      {"id": 25.1, "title": "Address issues found during testing", "status": "pending"},
+      {"id": 25.2, "title": "Final code cleanup and documentation", "status": "pending"}
+    ]
+  }
+] 
